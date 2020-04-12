@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Departamento,Habilidad,Empleado
+from .models import Componente, Cliente,Productos, Pedido
 
 # Create your views here.
 from django.http import HttpResponse

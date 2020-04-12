@@ -38,7 +38,7 @@ class Productos(models.Model):
 class Pedido(models.Model):
     codigo = models.CharField #PRIMARY KEY (?)
     fecha = models.DateField()
-    datos_cliente = models.ForeignKey(Cliente)
+    datos_cliente = models.ForeignKey(Cliente, on_delete= models.CASCADE)
     productos = models.ManyToManyField(Productos)
     cantidad = models.IntegerField
     precio_total = models.IntegerField
