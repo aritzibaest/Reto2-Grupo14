@@ -6,9 +6,9 @@ from django.db import models
 class Cliente (models.Model):
     CIF = models.CharField(max_length=9)
     empresa = models.CharField(max_length=30)
-    telefono = models.CharField
+    telefono = models.IntegerField
 
-def __str__(self):
+    def __str__(self):
         return f"CIF={self.CIF}, empresa={self.empresa}, telefono={self.telefono}"
 
 
